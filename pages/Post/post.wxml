@@ -1,0 +1,8 @@
+<!--pages/post/post.wxml-->
+<view class="container">
+  <PostItem 
+    postItem="{{postInfo}}" 
+
+  />
+
+</view>

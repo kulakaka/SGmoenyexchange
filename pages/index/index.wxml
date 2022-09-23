@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="container">
+<view class="tabs">
+  <van-tabs active="{{ active }}" color="#407FF5" line-width="70" bind:change="onChange">
+    <van-tab title="我要rmb">
+      <PostList>
+        <PostItem 
+          wx:for="{{SgdToRmbList}}" 
+          wx:key="_id" 
+          bindtap="toPost" 
+          id="{{item._id}}" 
+          postItem="{{item}}" 
+           
+        /> 
+      </PostList>
+    </van-tab>
+    <van-tab title="我要sgd">
+      <PostList>
+        <PostItem 
+          wx:for="{{RmbToSgdList}}" 
+          wx:key="_id" 
+          bindtap="toPost" 
+          id="{{item._id}}" 
+          postItem="{{item}}" 
+           
+        /> 
+      </PostList>
+    </van-tab>
+  </van-tabs>
+</view>
+
+</view>

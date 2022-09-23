@@ -1,0 +1,3 @@
+<view class="postList"> 
+  <slot></slot>
+</view>

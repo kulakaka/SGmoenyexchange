@@ -1,0 +1,11 @@
+/**index.wxss**/
+.container
+{
+    width: 100vw;
+}
+.tabs
+{
+  width: auto;
+  margin-top: 0%;
+  flex-direction: column;
+}
